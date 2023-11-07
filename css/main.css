@@ -7,9 +7,9 @@ html {
     font-family: 'Quicksand', sans-serif;
     font-size: 0.95em;
     line-height: 1.5em;
-    background-image: url("../images/background.jpg");
+    background-image: url("../images/Home.png");
     background-repeat: repeat;
-    background-size: 2000px 1200px;
+    background-size: 2250px 1200px;
 }
 
 body{
@@ -24,7 +24,7 @@ body{
 h1 {
     font-weight: normal;
     margin: auto;
-    background: #fff;
+    background: rgb(49, 52, 68);
     line-height: 2.5em;
 }
 /*
@@ -43,7 +43,7 @@ h1.page-header{
  
 
  main.wrapper {
-    background-color: white;
+    background-color: rgb(49, 52, 68);
     overflow: auto;
     -moz-border-radius-bottomleft: 5px;
     -moz-border-radius-bottomright: 5px;
@@ -79,7 +79,47 @@ footer {
     padding: 1em;
 }
 
+/* start positioning styles */
+.text-align-center{
+    text-align:center;
+    background-color:aqua;
+ }
+ 
+/* end positioning styles */
+.margin-auto > div{
+    margin:auto;
+    width:50%;
+    background-color:beige;
+    text-align:center;
+ }
+ 
+/* Allows box to take up full space, ignoring padding/margin */
+* {
+    box-sizing: border-box;
+  }
+ 
+ 
+ /* Create two equal columns that floats next to each other */
+ .my-column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    min-height: 300px; /* Can be removed. Only for demonstration */
+  }
+   /* Clear floats after the columns */
+  .my-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+ 
 /* Responsive rules */
+
+@media all and (max-width:500px) {
+    .my-column {
+        width: 100%;
+      }
+ } 
 
 /* DESKTOP */
 @media all and (min-width:1200px) {
