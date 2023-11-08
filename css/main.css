@@ -113,7 +113,7 @@ footer {
     display: table;
     clear: both;
   }
- 
+
   .fa {
     padding: 20px;
     font-size: 30px;
@@ -152,6 +152,17 @@ footer {
     display: flex;
     justify-content: space-evenly;
   }
+ 
+  /* flexible image rules start here */
+.flexible img{
+    width:100%;
+ }
+ 
+.flexible{
+    display: flex;
+    justify-content: space-evenly;
+ }
+ /* flexible image rules end here */
  
 
 /* Responsive rules */
